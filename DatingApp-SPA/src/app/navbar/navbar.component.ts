@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../_services/auth.service';
 import { AlertifyService } from '../_services/alertify.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -10,7 +11,7 @@ import { AlertifyService } from '../_services/alertify.service';
 export class NavbarComponent implements OnInit {
   model: any = {};
 
-  constructor(public authService: AuthService, private aleritify: AlertifyService) { }
+  constructor(public authService: AuthService, private aleritify: AlertifyService, private router: Router) { }
 
   ngOnInit() {
   }
