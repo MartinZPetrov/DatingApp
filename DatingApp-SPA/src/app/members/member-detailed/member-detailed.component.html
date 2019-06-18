@@ -9,7 +9,7 @@
           <img
             class="card-img-top img-thumbnail"
             alt="{{ user?.knownAs }}"
-            src="{{ user?.photoUrl }}"
+            src="{{ user?.photoUrl || '../../assets/user.png' }}"
           />
           <div class="card-body">
             <div>

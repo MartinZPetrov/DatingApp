@@ -26,11 +26,12 @@ import { AlertifyService } from './_services/alertify.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
-import { BsDropdownModule, TabsModule } from 'ngx-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BsDropdownModule, TabsModule, BsDatepickerModule } from 'ngx-bootstrap';
 import { RouterModule } from '@angular/router';
 import { JwtModule } from '@auth0/angular-jwt';
 import { FileUploadModule } from 'ng2-file-upload';
+
 
 export function tokenGetter() {
    return localStorage.getItem('token');
@@ -52,6 +53,7 @@ export function tokenGetter() {
       PhotoEditorComponent
    ],
    imports: [
+      ReactiveFormsModule,
       FileUploadModule,
       BrowserModule,
       HttpClientModule,
@@ -66,7 +68,8 @@ export function tokenGetter() {
             blacklistedRoutes: ['localhost:5000/api/auth']
          }
       }),
-      NgxGalleryModule
+      NgxGalleryModule,
+      BsDatepickerModule.forRoot()
    ],
    providers: [
       AuthService,
