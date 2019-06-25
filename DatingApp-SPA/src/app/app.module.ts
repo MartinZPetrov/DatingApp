@@ -31,6 +31,7 @@ import { BsDropdownModule, TabsModule, BsDatepickerModule, PaginationModule, But
 import { RouterModule } from '@angular/router';
 import { JwtModule } from '@auth0/angular-jwt';
 import { FileUploadModule } from 'ng2-file-upload';
+import { ListResolver } from './_resolver/list.resolver';
 
 
 export function tokenGetter() {
@@ -85,7 +86,8 @@ export function tokenGetter() {
       MemberDetailResolver,
       MemberListResolver,
       MemberEditResolver,
-      PreventUnsavedChanges
+      PreventUnsavedChanges,
+      ListResolver
    ],
    bootstrap: [
       AppComponent
