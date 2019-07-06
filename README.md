@@ -38,3 +38,4 @@
 • Handling errors in the API and the SPA
 
 • Persist data using Entity Framework Core
+• https://www.udemy.com/certificate/UC-5X0AFMLS/
