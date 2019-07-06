@@ -21,7 +21,7 @@
 
 • Adding a Private Messaging system to the app
 
-• Use Visual Studio code effectively to improve workflow
+• Using Visual Studio Code
 
 • Use AutoMapper
 
