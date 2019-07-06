@@ -1,5 +1,5 @@
 # DatingApp
-.NET Core APP with Angular and SQLite
+.NET Core APP (2.1) with Angular (6.0) and SQLite
 
 • Creating the ASP.NET Core WebAPI and the Angular app using the DotNet CLI and the Angular CLI
 
